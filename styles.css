@@ -1,0 +1,55 @@
+body {
+  background: #0a0a0a;
+  color: #ff7300;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-pulse {
+  width: 300px;
+  animation: pulse 1.5s infinite;
+  filter: drop-shadow(0 0 0px #000000);
+  transition: filter 0.3s;
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 0px #000000);
+  }
+  40% {
+    filter: drop-shadow(0 0 24px #ff7300ff);
+  }
+  60% {
+    filter: drop-shadow(0 0 24px #ff7300ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #000000);
+  }
+}
+
+.texto-em-breve {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #ff7300;
+  text-shadow: 0 0 8px #ff7300aa;
+}
+
+.tempo {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #ffb366;
+  text-shadow: 0 0 6px #ff7300aa;
+} 
